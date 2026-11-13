@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>APPTAMALERA69</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script type="module" src="./js/scripts.js"></script>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="./css/styles.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+     
+     
+    </head>
+    
+
+
+
+    <body id="page-top">
+  
+
+
+      <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Acceso</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ul class="nav nav-tabs mb-3" id="authTabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="tab" href="#loginTab">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#registerTab">Register</a>
+                </li>
+              </ul>
+      
+              <div class="tab-content">
+                <!-- Login -->
+                <div class="tab-pane fade show active" id="loginTab">
+                  <div id="login-error" class="alert alert-danger d-none mb-3"></div>
+                  <form id="loginForm">
+                    <div class="mb-3">
+                      <label for="loginEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="loginEmail" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="loginPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Get into</button>
+                  </form>
+                </div>
+                
+                <!-- Registro -->
+                <div class="tab-pane fade" id="registerTab">
+                  <div id="register-error" class="alert alert-danger d-none mb-3"></div>
+                  <form id="registerForm">
+                    <div class="mb-3">
+                      <label for="registerUsername" class="form-label">Nickname</label>
+                      <input type="text" class="form-control" id="registerUsername" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="registerEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="registerEmail" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="registerPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="registerPassword" minlength="6" required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Sign in</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+          <div class="container px-4 px-lg-5">
+              <a class="navbar-brand" href="#page-top">Home</a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  Menu
+                  <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                      <ul class="navbar-nav ms-auto">
+<!-- Botones de login/logout -->
+<div class="auth-buttons">
+  <button id="loginBtn" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
+    <i class="fas fa-sign-in-alt"></i> Login
+  </button>
+  <button id="logoutBtn" class="btn btn-danger btn-sm d-none">
+    <i class="fas fa-sign-out-alt"></i> Logout
+  </button>
+
+  <span  style="color: aliceblue;"   id="userGreeting" class="d-none ms-2"></span>
+</div>
+        
+      </nav>
+      
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Welcome to the "apptamalera69"</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Do you want to know what in the skibidis  is the page about? entonces...</h2>
+                        <a class="btn btn-primary" href="#about">Puchale play</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    
+
+        <!-- About-->
+  
+     
+
+        <section class="about-section text-center" id="about">
+        
+            <div class="feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                </svg>
+                <h3>Interactive Maps</h3>
+                <p>
+                  Navigate and find locations easily.</p>
+              </div>
+              <div class="feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloud-drizzle" viewBox="0 0 16 16">
+                  <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m-3.5 1.5a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m.747-8.498a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973M8.5 2a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4 4 0 0 1 8.5 2"/>
+                </svg>
+                <h3>Meteorological data</h3>
+                <p>Query temperature and conditions in any city.</p>
+              </div>
+              <div class="feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                </svg>
+                <h3>Real -time update</h3>
+                <p>Get accurate and updated information.</p>
+              </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+      
+       
+ 
+
+
+    
+  
+
+    
+   
+  
+<div class="tamal"> <h1>Ta mal</h1>
+  <img src="./assets/img/tamal.png" alt="">
+
+</div>
+       
+
+    
+
+
+      <div class="div1">
+        <h2><label for="iconSelect"><strong>Select an icon:</strong></label></h2>
+        <select id="iconSelect">
+            <option value="0">Herta icon</option>
+            <option value="1">Elysia icon</option>
+            <option value="2">Flag icon</option>
+        </select>
+        <img
+            id="iconPreview"
+            src="./assets/img/herta.gif"
+            alt="Vista previa del icono"
+            width="50"
+            height="50"
+        />
+    </div>
+
+      <main>
+        <div  id="map-container" class="d-none"   > 
+          <section class="map">
+            <div id="map"   style="height: 500px; width: 100%;"  ></div>
+            <script>
+              ((g) => {
+                var h,
+                  a,
+                  k,
+                  p = "The Google Maps JavaScript API",
+                  c = "google",
+                  l = "importLibrary",
+                  q = "__ib__",
+                  m = document,
+                  b = window;
+                b = b[c] || (b[c] = {});
+                var d = b.maps || (b.maps = {}),
+                  r = new Set(),
+                  e = new URLSearchParams(),
+                  u = () =>
+                    h ||
+                    (h = new Promise(async (f, n) => {
+                      await (a = m.createElement("script"));
+                      e.set("libraries", [...r] + "");
+                      for (k in g)
+                        e.set(
+                          k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                          g[k]
+                        );
+                      e.set("callback", c + ".maps." + q);
+                      a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+                      d[q] = f;
+                      a.onerror = () => (h = n(Error(p + " could not load.")));
+                      a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                      m.head.append(a);
+                    }));
+                d[l]
+                  ? console.warn(p + " only loads once. Ignoring:", g)
+                  : (d[l] = (f, ...n) =>
+                      r.add(f) && u().then(() => d[l](f, ...n)));
+              })({
+                key: "AIzaSyD5qgBi2u00gnpbGPzKLbPGS9UtWpUWE9c",
+                v: "weekly",
+              });
+            </script>
+          </section>
+        </div>
+      
+       
+        <section class="controls">
+         
+          <div class="div3">
+            <section class="controls">
+                <form action="" class="controlsForms">
+                    <label for="longitude">Longitude:</label>
+                    <input type="text" name="longitude" id="longitude" />
+                    
+                    <label for="latitude">Latitude:</label>
+                    <input type="text" name="latitude" id="latitude" />
+                    
+                
+                    
+                    <input type="button" id="buttonSet" value="Move to" />
+                    
+                    <label for="locationSelect">Location:</label>
+                    <select type="text" name="locationSelect" id="locationSelect"></select>
+                </form>
+            </section>
+        </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const iconSelect = document.getElementById("iconSelect");
+      const iconPreview = document.getElementById("iconPreview");
+
+      const icons = {
+        0: "./assets/img/herta.gif", // Icono negro
+        1: "./assets/img/elysiasax.gif", // Icono azul
+        2: "./assets/img/beachflag.png", // Bandera de playa
+      };
+
+      iconSelect.addEventListener("change", function () {
+        const selectedValue = iconSelect.value;
+        if (icons[selectedValue]) {
+          iconPreview.src = icons[selectedValue];
+        }
+      });
+
+      function addMarker(location) {
+        const selectedValue = iconSelect.value;
+        const iconUrl = icons[selectedValue] || "./assets/img/herta.gif";
+
+        const marker = new google.maps.Marker({
+          map,
+          position: location,
+          icon: {
+            url: iconUrl,
+            size: new google.maps.Size(32, 32),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(16, 16),
+          },
+        });
+      }
+    </script>
+
+<dialog class="popup">
+  <h1>Set Data</h1>
+  <form action="">
+    <div class="form" action=""></div>
+    <form>
+      <div class="form-group">
+        <label for="longitude">Longitude</label>
+        <input
+          type="text"
+          class="form-control"
+          value=""
+          name="longitude"
+          id="popup_longitude"
+          disabled
+        />
+        <small class="form-text text-muted"></small>
+      </div>
+
+
+ <div class="form-group">
+        <label for="latitude">Latitude</label>
+        <input
+          type="text"
+          class="form-control"
+          value=""
+          name="latitude"
+          id="popup_latitude"
+          disabled
+        />
+        <small class="form-text text-muted"></small>
+      </div>
+      
+      <div class="form-group">
+        <label for="longitude">Place Name</label>
+        <input
+          type="text"
+          class="form-control"
+          value=""
+          name="placename"
+          id="inputPlace"
+          required
+        />
+        <small id="warning"   class="form-text text-muted"></small>
+      </div>
+  <input id="popupButton"   
+        class="btn btn-primary" 
+        type="submit" 
+        value="Save">
+        <button id="cancelButton" class="btn btn-secondary" type="button">Cancel</button>
+      
+    
+    </form> 
+    </dialog>
+
+
+
+
+
+
+
+
+<!--clima-->
+<div    class="weather-container" id="weather-container">
+  <p>Search for a city if you want to know its weather</p>
+  <input type="text" id="cityInput" placeholder="Ej: Madrid">
+  <button id="searchButton">Search</button>
+  
+  <script>
+  
+  document.getElementById('searchButton').addEventListener('click', function() {
+      const city = document.getElementById('cityInput').value;
+      if(city) {
+          getWeatherByCity(city);
+      } else {
+          alert("Please enter a city");
+      }
+  });
+  </script>
+  
+  <div id="weatherInfo"></div>
+  <div id="weatherAlerts" style="margin-top: 20px;"></div>
+</div>
+
+<style>
+  .alert {
+      background-color: #cdfff8;
+      border-left: 4px solid #2c07ff;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+  }
+  #weatherInfo {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #cfdae4;
+      border-radius: 5px;
+  }
+</style>
+        </section>
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Put your email to win a cookie</h2>
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="f1c695f0-7b66-42c0-a004-82c163128407">
+                            <!-- Email address input-->
+                            <div class="row input-group-newsletter">
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">I want a cookie!</button></div>
+                            </div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3 mt-2 text-white">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div   id="contactss" class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">UTLD</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="">elmataprros40@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">696969</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                 <div class="socialM">
+                  <h3 class="sitename"   >Ángel Omar Reyes García</h3>
+                  <a class="mx-2" href="https://www.facebook.com/profile.php?id=100058440950436"><i class="fab fa-facebook-f"></i></a>
+                  <a class="mx-2" href="https://github.com/Angel69-69dgrytnhgnh"><i class="fab fa-github"></i></a>
+                 </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50">
+          <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div>
+          <div class="credits">
+            Designed by <a href="https://startbootstrap.com">startbootstrap</a>
+          </div>
+          <div class="credits">
+            Original Template design <a href="https://startbootstrap.com/theme/grayscale">startbootstrap-grayscale-gh-pages</a>
+          </div>
+          <div class="credits">
+            Edited by <a href="">Ángel Omar Reyes García</a>
+          </div>
+          <button id="hidden-btn">🔍</button>
+
+          <div id="waifu-window">
+              <img id="waifu-img" src="" alt="Waifu">
+              <br>
+              <button id="close-btn">Cerrar</button>
+          </div>
+      
+        </footer>
+
+
+
+
+      
+     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>       
+
+        <!-- Bootstrap core JS-->
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+     
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script type="module" src="./js/AuthController.js"></script>
+         <script type="module" src="./js/firebase-init.js"></script>
+         <script type="module" src="./js/auth.js"></script>
+         <script type="module" src="./js/scripts.js"></script>
+
+
+    </body>
+</html>
