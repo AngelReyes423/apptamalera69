@@ -11414,7 +11414,7 @@ body {
       rgba(0, 0, 0, 0.7) 75%,
       #000 100%
     ),
-    url("./assets/img/tamalero.png");
+    url("../assets/img/tamalero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
